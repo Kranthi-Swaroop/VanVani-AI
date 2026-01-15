@@ -2,7 +2,7 @@
 import logging
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, Response, Form
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from twilio.twiml.voice_response import VoiceResponse, Gather
@@ -46,7 +46,7 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 @app.get("/")
 async def root():
-    return {"status": "active", "service": settings.app_name}
+    return FileResponse("app/static/index.html")
 
 @app.get("/health")
 async def health_check():
