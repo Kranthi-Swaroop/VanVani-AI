@@ -44,7 +44,6 @@ logs/
 *.log
 
 # Vector Store
-data/vector_store/
 chroma_db/
 
 # Audio files
