@@ -1,0 +1,61 @@
+# Environment variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Vector Store
+data/vector_store/
+chroma_db/
+
+# Audio files
+*.wav
+*.mp3
+temp_audio/
+
+# Google Cloud credentials
+*.json
+!package.json
+
+# OS
+.DS_Store
+Thumbs.db

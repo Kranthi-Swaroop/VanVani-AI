@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanVani AI - Voice Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <div class="glass-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-塔"></i> VanVani AI
+            </div>
+            <div class="status-pill" id="connectionStatus">
+                <span class="dot"></span> Ready
+            </div>
+        </header>
+
+        <main>
+            <div class="visualizer-container">
+                <div class="waves" id="voiceWaves">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <div class="chat-area" id="chatArea">
+                <div class="message assistant">
+                    <p>Namaste! I am VanVani. Ask me about PM KUSUM, health, or agriculture.</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <select id="languageSelect">
+                    <option value="hi-IN">हिन्दी (Hindi)</option>
+                    <option value="en-IN">English</option>
+                    <option value="hi-IN" data-lang="chhattisgarhi">छत्तीसगढ़ी (Chhattisgarhi)</option>
+                    <option value="hi-IN" data-lang="gondi">गोंडी (Gondi)</option>
+                    <option value="hi-IN" data-lang="halbi">हल्बी (Halbi)</option>
+                </select>
+
+                <button id="micButton" class="mic-btn">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+            </div>
+        </main>
+
+        <div class="demo-notice">
+            <i class="fa-solid fa-circle-info"></i> This web interface demonstrates the AI logic while telephony
+            services (Twilio) are inactive.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
